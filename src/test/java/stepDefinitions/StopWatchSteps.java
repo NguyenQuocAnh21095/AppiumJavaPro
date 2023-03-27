@@ -1,2 +1,4 @@
-package stepDefinitions;public class StopWatchSteps {
+package stepDefinitions;
+
+public class StopWatchSteps {
 }

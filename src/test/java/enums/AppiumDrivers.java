@@ -1,2 +1,6 @@
-package enums;public class AppiumDrivers {
+package enums;
+
+public enum AppiumDrivers {
+    AndroidDriver,
+    IOSDriver
 }

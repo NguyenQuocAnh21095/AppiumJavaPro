@@ -1,2 +1,4 @@
-package stepDefinitions;public class AlarmSteps {
+package stepDefinitions;
+
+public class AlarmSteps {
 }
