@@ -13,6 +13,8 @@ public class ClockPage {
         PageFactory.initElements(new AppiumFieldDecorator(driver),this);
     }
 
+    @FindBy(xpath = "//androidx.appcompat.app.ActionBar.Tab[@content-desc=\"Clock\"]/android.widget.TextView")
+    MobileElement clockTab;
     @FindBy(id = "com.android.deskclock:id/fab")
     MobileElement plusIcon;
     @FindBy(xpath = "//android.widget.CheckBox[@content-desc=\"Amsterdam\"]")
@@ -23,6 +25,11 @@ public class ClockPage {
     MobileElement CityName;
     @FindBy(id = "com.android.deskclock:id/hours_ahead")
     MobileElement HourAhead;
+
+    public void click_Clock_tab() throws InterruptedException {
+        Thread.sleep(3000);
+        clockTab.click();
+    }
 
     public void add_Amsterdam_clock() throws InterruptedException {
         Thread.sleep(3000);
